@@ -27,6 +27,10 @@
 #ifndef INCLUDED_DIRECTORY
 #define INCLUDED_DIRECTORY
 
+#if defined __APPLE__
+#include <sys/syslimits.h>
+#endif
+
 #include <File.h>
 
 class Directory : public File
